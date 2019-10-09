@@ -7,6 +7,30 @@ p{
   font-style: oblique;
   color:rgb(33, 77, 124);
 }
+figure{
+  padding-left: 0;
+  padding-right: 0;
+  border: #6bff63;
+  border: 10px;
+}
+
+figure img {    /*Оконтовка вокруг картинки голубого цвета*/
+  vertical-align: middle;
+  border: 28px solid rgb(202, 224, 248);
+}
+
+
+figcaption {
+  width: 300px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  text-align: center;
+  background-color: #ffc8d0;
+}
+
+
 /* nav:link{ 
   href="file:///D:/Atom/Start/index.html"
 } */
