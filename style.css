@@ -1,11 +1,12 @@
 html{
   font-style: normal;
-  background-color: rgb(205, 208, 214);
+  background-image: url("background.jpg");
+background-size: 100%;
 }
 
 p{
   font-style: oblique;
-  color:rgb(33, 77, 124);
+  color: #79ffac;
 }
 figure{
   padding-left: 0;
