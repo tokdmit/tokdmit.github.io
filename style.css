@@ -20,6 +20,14 @@ figure img {    /*Оконтовка вокруг картинки голубо�
   border: 28px solid rgb(202, 224, 248);
 }
 
+table{
+  border: 3px solid #ff8940;
+}
+
+td{
+  border: 2px solid #97ff76;
+}
+
 
 figcaption {
   width: 300px;
