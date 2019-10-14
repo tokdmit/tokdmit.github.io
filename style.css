@@ -1,7 +1,10 @@
 html{
   font-style: normal;
   background-image: url("background.jpg");
-background-size: 100%;
+/*    -moz-background-size: 100%; /* Firefox 3.6+ */
+/*    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ *!*/
+/*    -o-background-size: 100%; /* Opera 9.6+ *!*/
+/*background-size: 100%; /*растягивает фон на 100% ширины экрана*!*/
 }
 
 p{
@@ -26,20 +29,24 @@ figure img {    /*Оконтовка вокруг картинки голубо�
 table{
     border-collapse: separate; /*separate - раздельные ячейки, collapse - склеенные ячейки*/
   border: 3px solid #ff8940;
+    text-align: center;
 }
 caption{ /*Заголовок для таблицы*/
     font-size: 32px;
 }
 th{ /*Параметры для заглавных ячеек в таблице*/
-    padding:5px;
+    /*padding:5px;*/
     border: 2px solid #61a24d;
 }
 
 td{ /*Параметры для ячеек в таблице*/
-    padding-left: 15px;
+    /*padding-left: 15px;*/
   border: 2px solid #61a24d;
 }
 
+td.viravnl{
+    text-align: left;
+}
 td.red{ /*Ячейка выборочно окрашена в красный цвет*/
     background-color: #d3001a;
 }
