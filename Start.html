@@ -18,13 +18,19 @@
         <h1 class="text">На повестке дня</h1>
 <p>Создаем простейшую таблицу</p>
         <table>
+            <caption>Простейшая таблица</caption> <!--caption - Заголовок таблицы -->
             <tr>
-                <td>Марка</td>
-                <td>Операционная система</td>
-                <td>Цена в грн</td>
-                <td>Баллы</td>
+                <th colspan="5">Подбор ноутбука по критериям и характеристикам</th>
             </tr>
             <tr>
+                <th colspan="2">Марка</th> <!--Объедингение ячеек по горизонтали -->
+                <th>Операционная система</th>
+                <th>Цена в грн</th>
+                <th>Баллы</th>
+            </tr>
+            <tr>
+                <td rowspan="3" > <!--Объединение ячеек по вертикали -->
+                    <p class="vertical">Модель</p></td> <!--Специально создан класс для поворота текста в ЦСС -->
                 <td>
                     <a href="https://allo.ua/ua/products/notebooks/apple-a1466-macbook-air-mqd32ua-a.html">
                     <img src=" https://i.allo.ua/media/catalog/product/cache/3/image/425x295/799896e5c6c37e11608b9f8e1d047d15/m/a/macbook_air_13_-01_macbook_air_13-inch-screen_4.jpg"
@@ -41,7 +47,7 @@ width="30%" height="30%">
                     MacBookPro</a>
                     </td>
                 <td>MacOS</td>
-                <td>35999</td>
+                <td class="red">35999</td>
                 <td>85</td>
             </tr>
             <tr>
