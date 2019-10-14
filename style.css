@@ -19,8 +19,13 @@ figure img {    /*Оконтовка вокруг картинки голубо�
   vertical-align: middle;
   border: 28px solid rgb(202, 224, 248);
 }
+.text{
+    text-align: center;
+}
 
 table{
+    padding: auto;
+  border-collapse: collapse;
   border: 3px solid #ff8940;
 }
 
