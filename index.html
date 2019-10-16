@@ -11,11 +11,14 @@
   <h1>Нажми здесь ;)</h1></a>
 <body>
 <h1>Сайт делается с нуля в программе WebStorm</h1>
-<h2>Создаем форму</h2>
-<form action="file:///d:/html/ws/code/test.txt" method="post"> <!--Пробую создавать формы -->
- <label for="total-field">Форма для ввода данных
+<h2>Вход</h2>
+<form action="file:///d:/html/ws/code/test.txt" method="get"> <!--Пробую создавать формы -->
+    <label for="l_forma">Имя
  </label> <!--label дает понять тексту через id (названию) к чему оно относится и при нажатии на текст - форма активируется -->
-    <input  type="text" name="login" id="total-field" value="5"> <!--Ввод текста/ value="5"автоматически подставляет значение5 -->
+    <input  type="text" name="login" id="l_forma" value="Имя"> <!--Ввод текста/ value="5"автоматически подставляет значение5 -->
+<label for="p_forma">Пароль</label>
+    <input type="password" name="password" id="p_forma" value="7777777"> <!--password скрывает написанное звездочками -->
+    <input type="submit" value="Вход"> <!--submit это кнопка входа -->
 </form>
 <p></p>
 <img src="WS.jpg" alt="логотип программы">
