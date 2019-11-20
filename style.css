@@ -7,6 +7,9 @@ html{
 /*background-size: 100%; /*растягивает фон на 100% ширины экрана*!*/
 }
 
+                                                                                                                                                                                                                                                                                                                                                                                                                  <link rel='stylesheet' media='(max-width: 799px)' href='URL_маленький_экран.css' />
+
+
 p{
   font-style: oblique;
   color: #276147;
