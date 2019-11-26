@@ -16,6 +16,14 @@ p{
   font-style: oblique;
   color: #276147;
 }
+p.vertical{ /*осуществлен поворот текста в таблице горизонтально*/
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
 figure{
   padding-left: 0;
   padding-right: 0;
@@ -30,6 +38,16 @@ figure{
     background-repeat: no-repeat;
     background-position: center top;
     text-transform: uppercase;
+    text-align: center;
+}
+.first{
+   text-transform: lowercase;
+    color: #d3001a;
+}
+
+.third{
+    color: black;
+
 }
 
 
@@ -68,13 +86,7 @@ td.red{ /*Ячейка выборочно окрашена в красный ц�
     background-color: #d3001a;
 }
 
-p.vertical{ /*осуществлен поворот текста в таблице горизонтально*/
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
+
 
 figcaption {
   width: 300px;
@@ -86,7 +98,11 @@ figcaption {
   background-color: #ffc8d0;
 }
 
+.h2_new{
 
+    color: #730c0d;
+    text-align: center;
+}
 /* nav:link{ 
   href="file:///D:/Atom/Start/index.html"
 } */
