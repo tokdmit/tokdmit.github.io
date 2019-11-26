@@ -46,7 +46,7 @@
 </select>
 </p>
 <p>Список (multiple) в котором с shift можно выбрать несколько вариантов
-  <select name="soft[]" size="3" multiple>
+  <select name="soft" size="3" multiple>
     <option value="1">Один год</option>
     <option value="2" selected>Два года</option>
     <option value="3">Три года</option>
@@ -58,6 +58,15 @@
     <input type="file">
     </label>
 </form>
+<p>Форма оплаты товара</p>
+<form name="oplata" method="post">
+  <label>
+  <input type="text" name="oplata_tovara" value="5000">.грн
+  <input type="hidden" name="nomer_oplata_tovara" value="1">
+  <input type="submit" value="Оплатить">
+  </label>
+</form>
+
 
 </body>
 </html>
