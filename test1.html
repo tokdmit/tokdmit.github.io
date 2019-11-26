@@ -5,24 +5,14 @@
   <meta name="Test1" content="Тестовая страница">
   <title>Тест</title>
   <link rel="stylesheet" href="style.css">
- <!-- <style>
-    main { /* основное содержимое */
-      position: relative; /* боковая колонка перемещается в рамках основного содержания */
-      margin: 0 auto; /* сайт располагается по центру экрана */
-      max-width: 1200px; /* резиновая, растягивается до значения в 1200px */
-      padding-right: 310px; /* = боковая колонка + отступ в 10px */
-    }
-    aside { /* боковая колонка */
-      width: 300px; /* фиксированная, не меняется с изменением размера окна браузера */
-      position: absolute; top: 0; right: 0; /* прижата к верхнему правому углу */
-    }
-  </style>
--->
+
 </head>
+<body>
 <a href="index.html" >
   <input type="button" name="На главную" value="На главную">
 </a>
 <h1>Тестовая страница</h1>
+
 <table >
   <caption>Перечень смонтированного оборудования</caption>
 <tr>
@@ -48,6 +38,29 @@
   <label><input type="radio" name="os" value="Linux">Linux</label>
   <label><input type="radio" name="os" value="Mac">MacOS</label>
 </p>
+<p>Выберете гарантийный период в раскрывающемся списке:
+<select name="warranty">
+  <option value="1">Один год</option>
+  <option value="2">Два года</option>
+  <option value="3">Три года</option>
+</select>
+</p>
+<p>Список (multiple) в котором с shift можно выбрать несколько вариантов
+  <select name="soft[]" size="3" multiple>
+    <option value="1">Один год</option>
+    <option value="2" selected>Два года</option>
+    <option value="3">Три года</option>
+  </select>
+</p>
+<p>Создание поля для загрузки файлов</p>
+<form enctype="multipart/form-data" method="post">
+  <label>Выберите файл:
+    <input type="file">
+    </label>
+</form>
+
+</body>
+</html>
 
 
 
