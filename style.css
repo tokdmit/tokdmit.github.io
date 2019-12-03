@@ -14,6 +14,13 @@ main { /* основное содержимое */
 }
 .test_h1{
     text-align: center;
+/*Зафиксирован h1 в шапке сайта*/
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+
+
 }
 .test1_html_center {
 text-align: center;
