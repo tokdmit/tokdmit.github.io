@@ -5,14 +5,24 @@
   <meta name="Test1" content="Тестовая страница">
   <title>Тест</title>
   <link rel="stylesheet" href="style.css">
+  <style> /* Чуток стилей непосредственно в HTML коде */
+    html{
+    background-image: url("https://image.freepik.com/free-vector/abstack-bigbamm_68708-513.jpg");
+    }
+    p{
+      color: black;
+    }
+  </style>
 
 </head>
 <body>
+<header>
 <a href="index.html" >
   <input type="button" name="На главную" value="На главную">
 </a>
-<h1>Тестовая страница</h1>
-
+<h1 class="test_h1 test1_h2_bg">Тестовая страница</h1>
+</header>
+<div class="test1_html_center"><main>
 <table >
   <caption>Перечень смонтированного оборудования</caption>
 <tr>
@@ -67,8 +77,12 @@
   </label>
 </form>
 
+
 <section class="features">
-  <h2 class="h2_new">Разделение на три колонки</h2>
+   <!--Задаю фон для текста "Разделение на три колонки через css .test1_h2_bg"-->
+  <h2 class="h2_new"><aside class="test1_h2_bg">Разделение на три колонки</aside></h2>
+
+
   <p class="first">Первая колонка "Осьминог"<br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Polbo_pulpo_galicia.jpg/1280px-Polbo_pulpo_galicia.jpg" width="200" height="200" alt="Осьминог" ><br>
     Осьмино́ги, или спру́товые (лат. Octōpoda от др.-греч. ὀϰτώ «восемь» и πούς «нога»), — самый известный отряд головоногих моллюсков. Типичные осьминоги, описанные в этой статье, — представители подотряда Incirrina, придонные животные. Но некоторые представители этого подотряда и все виды второго подотряда Cirrina — пелагические животные, обитающие в толще воды, причём многие из них встречаются только на больших глубинах. Наука, изучающая осьминогов и других головоногих моллюсков, называется теутология
@@ -84,6 +98,8 @@
 
   </p>
 </section>
+</main>
+</div>
 </body>
 </html>
 

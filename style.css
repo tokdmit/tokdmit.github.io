@@ -12,6 +12,17 @@ main { /* основное содержимое */
     max-width: 1200px; /* резиновая, растягивается до значения в 1200px */
     padding-right: 310px; /* = боковая колонка + отступ в 10px */
 }
+.test_h1{
+    text-align: center;
+}
+.test1_html_center {
+text-align: center;
+}
+
+.test1_h2_bg{
+    background-image: url("https://image.freepik.com/free-vector/_23-2148362562.jpg");
+}
+
 p{
   font-style: oblique;
   color: #276147;
@@ -46,8 +57,9 @@ figure{
 }
 
 .third{
+    font-size: 16px;
+    font-family: "Arial Black";
     color: black;
-
 }
 
 
