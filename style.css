@@ -124,6 +124,13 @@ figcaption {
     color: #730c0d;
     text-align: center;
 }
+
+footer{
+    margin-top: 120px;
+    text-align:right;
+    color: dimgrey;
+    border-top: solid black 1px;
+}
 /* nav:link{ 
   href="file:///D:/Atom/Start/index.html"
 } */
