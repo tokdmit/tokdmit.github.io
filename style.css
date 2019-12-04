@@ -7,23 +7,26 @@ html {
     /*background-size: 100%; /*растягивает фон на 100% ширины экрана*!*/
 }
 main { /* основное содержимое */
-    position: relative; /* боковая колонка перемещается в рамках основного содержания */
+    /*position: relative;  боковая колонка перемещается в рамках основного содержания */
     margin: 0 auto; /* сайт располагается по центру экрана */
-    max-width: 1200px; /* резиновая, растягивается до значения в 1200px */
-    padding-right: 310px; /* = боковая колонка + отступ в 10px */
+    /*max-width: 1200px;  резиновая, растягивается до значения в 1200px */
+    /* padding-right: 310px;  = боковая колонка + отступ в 10px */
 }
 .test_h1{
     text-align: center;
-/*Зафиксирован h1 в шапке сайта*/
+/*Зафиксирован h1 в шапке сайта на странице test1.html*/
     position: fixed;
-    top: 0;
+    top: 15px;
     z-index: 100;
     width: 100%;
-
-
 }
+
 .test1_html_center {
-text-align: center;
+    text-align: center;
+}
+
+.test1_html_center main{
+    padding-top: 100px;
 }
 
 .test1_h2_bg{
@@ -105,8 +108,6 @@ td.viravnl{ /*Создан класс для форматирования тек
 td.red{ /*Ячейка выборочно окрашена в красный цвет*/
     background-color: #d3001a;
 }
-
-
 
 figcaption {
   width: 300px;
