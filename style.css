@@ -12,6 +12,15 @@ main { /* основное содержимое */
     /*max-width: 1200px;  резиновая, растягивается до значения в 1200px */
     /* padding-right: 310px;  = боковая колонка + отступ в 10px */
 }
+.main-menu{ /*Основное меню сайта*/
+    margin: 0;
+    padding: 10px 15px 10px 15px;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    width:150px;
+    background-color:#f5f5f5;
+}
+
 .test_h1{
     text-align: center;
 /*Зафиксирован h1 в шапке сайта на странице test1.html*/
