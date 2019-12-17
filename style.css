@@ -12,12 +12,18 @@ main { /* основное содержимое */
     /*max-width: 1200px;  резиновая, растягивается до значения в 1200px */
     /* padding-right: 310px;  = боковая колонка + отступ в 10px */
 }
+body {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Arial", sans-serif;
+}
 .main-menu{ /*Основное меню сайта*/
+    width:180px; /*Ширина списка*/
     margin: 0;
     padding:0;
-    /*padding: 10px 15px 10px 15px;*/
     list-style: none;
-    width:180px; /*Ширина списка*/
+    /*padding: 10px 15px 10px 15px;*/
     /*background-color:#f5f5f5;*/
     /*border: 1px solid #e5e5e5;*/
 }
@@ -29,19 +35,26 @@ main { /* основное содержимое */
 .main-menu a{
     display:block; /* Ссылки меню в виде блочных элементов*/
     color: cornflowerblue;
-    /* Сделаны отступы */
-    padding: 8px 14px;
-    border:1px solid #2e2fe5;
-    margin-top:-1px; /* схлопывание линий*/
+    margin-bottom:-1px; /* схлопывание линий*/
+    padding: 8px 14px;  /* Сделаны отступы */
     text-decoration: none; /* Убрано подчеркивание у ссылок*/
+    border:1px solid #2e2fe5;
+}
 
+.main-menu .active a{    /* Дизайн кнопки активной страницы*/
+    color:white;
+    background-color:#0088cc;
+}
+
+.main-menu a:hover{
+    background-color: #acd7f5;
 }
 
 .test_h1{
     text-align: center;
 /*Зафиксирован h1 в шапке сайта на странице test1.html*/
     position: fixed;
-    top: 15px;
+    top: 140px;
     z-index: 100;
     width: 100%;
 }
@@ -51,12 +64,12 @@ main { /* основное содержимое */
 }
 
 .test1_html_center main{
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .test1_h2_bg{
     background-image: url("https://image.freepik.com/free-vector/_23-2148362562.jpg");
-    padding: 30px;
+    padding: 60px;
 }
 
 p{
@@ -94,7 +107,7 @@ figure{
 
 .third{
     font-size: 16px;
-    font-family: "Arial Black";
+    font-family: "Arial Black", sans-serif;
     color: black;
 }
 
@@ -133,6 +146,14 @@ td.viravnl{ /*Создан класс для форматирования тек
 td.red{ /*Ячейка выборочно окрашена в красный цвет*/
     background-color: #d3001a;
 }
+td:hover {
+    background-color:#fcf8e3;
+}
+th:hover {
+    background-color:#fcf8e3;
+}
+
+
 
 figcaption {
   width: 300px;
