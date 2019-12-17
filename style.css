@@ -41,13 +41,13 @@ body {
     border:1px solid #2e2fe5;
 }
 
+.main-menu a:hover{
+    background-color: #acd7f5;
+}
+
 .main-menu .active a{    /* Дизайн кнопки активной страницы*/
     color:white;
     background-color:#0088cc;
-}
-
-.main-menu a:hover{
-    background-color: #acd7f5;
 }
 
 .test_h1{
