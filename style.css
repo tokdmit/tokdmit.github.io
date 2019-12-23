@@ -1,37 +1,56 @@
 html {
     font-style: normal;
     background-image: url("background.jpg");
-    /*    -moz-background-size: 100%; /* Firefox 3.6+ */
-    /*    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ *!*/
-    /*    -o-background-size: 100%; /* Opera 9.6+ *!*/
-    /*background-size: 100%; /*растягивает фон на 100% ширины экрана*!*/
+
 }
 main { /* основное содержимое */
-    /*position: relative;  боковая колонка перемещается в рамках основного содержания */
-    margin: 0 auto; /* сайт располагается по центру экрана */
-    /*max-width: 1200px;  резиновая, растягивается до значения в 1200px */
-    /* padding-right: 310px;  = боковая колонка + отступ в 10px */
-}
+      margin: 0 auto; /* сайт располагается по центру экрана */
+    }
 body {
     padding: 10px;
     font-size: 14px;
     line-height: 1.4;
     font-family: "Arial", sans-serif;
 }
-.main-menu{ /*Основное меню сайта*/
+
+/*********VVVVVV*********ГОРИЗОНТАЛЬНОЕ МЕНЮ**************VVVVVVV**********************/
+.horizontal-menu{ /*Основное (горизонтальное) меню сайта*/
+    margin-left: 190px;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+}
+.horizontal-menu li {
+    display:inline;
+    margin-right:5px;
+}
+
+.horizontal-menu> li{
+    border: 1px solid #2e2fe5;
+    /*margin-bottom: 8px;*/
+}
+
+.horizontal-menu a{
+    display:inline; /* Ссылки меню в виде блочных элементов*/
+    margin-bottom:-1px; /* схлопывание линий*/
+    padding: 8px 14px;  /* Сделаны отступы */
+    color: cornflowerblue;
+    text-decoration: none; /* Убрано подчеркивание у ссылок*/
+    /* border:1px solid #2e2fe5;*/
+}
+
+
+/*********VVVVVV*********ВЕРТИКАЛЬНОЕ МЕНЮ**************VVVVVVV**********************/
+.main-menu{ /*Основное (горизонтальное) меню сайта*/
     width:180px; /*Ширина списка*/
-    margin: 0;
+    margin:0;
     padding:0;
     list-style: none;
-    /*padding: 10px 15px 10px 15px;*/
-    /*background-color:#f5f5f5;*/
-    /*border: 1px solid #e5e5e5;*/
 }
 
 .main-menu> li{
     border: 1px solid #2e2fe5;
-
-
     /*margin-bottom: 8px;*/
 }
 
@@ -40,7 +59,6 @@ body {
     margin-bottom:-1px; /* схлопывание линий*/
     padding: 8px 14px;  /* Сделаны отступы */
     color: cornflowerblue;
-
     text-decoration: none; /* Убрано подчеркивание у ссылок*/
    /* border:1px solid #2e2fe5;*/
 }
@@ -71,6 +89,13 @@ body {
     padding-left:30px;
     padding-right:0px;
 }
+/***********ЛЛЛЛЛЛЛ*********ВЕРТИКАЛЬНОЕ МЕНЮ*************ЛЛЛЛЛЛЛЛЛ***************************/
+
+
+
+
+
+
 
 .test_h1{
     text-align: center;
@@ -175,8 +200,6 @@ th:hover {
     background-color:#fcf8e3;
 }
 
-
-
 figcaption {
   width: 300px;
   padding-bottom: 8px;
@@ -188,7 +211,6 @@ figcaption {
 }
 
 .h2_new{
-
     color: #730c0d;
     text-align: center;
 }
