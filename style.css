@@ -28,26 +28,48 @@ body {
     /*border: 1px solid #e5e5e5;*/
 }
 
-.main-menu li{
+.main-menu> li{
+    border: 1px solid #2e2fe5;
+
+
     /*margin-bottom: 8px;*/
 }
 
 .main-menu a{
     display:block; /* Ссылки меню в виде блочных элементов*/
-    color: cornflowerblue;
     margin-bottom:-1px; /* схлопывание линий*/
     padding: 8px 14px;  /* Сделаны отступы */
+    color: cornflowerblue;
+
     text-decoration: none; /* Убрано подчеркивание у ссылок*/
-    border:1px solid #2e2fe5;
+   /* border:1px solid #2e2fe5;*/
 }
 
-.main-menu a:hover{
+.main-menu li li a{ /* оформление ссылок внутреннего меню*/
+    color: #3133ed;
+}
+
+.main-menu a:hover{ /* оформление ссылок меню при наведении*/
     background-color: #acd7f5;
 }
 
-.main-menu .active a{    /* Дизайн кнопки активной страницы*/
-    color:white;
+.main-menu li li a:hover{ /* оформление ссылок внутреннего меню при наведении*/
+    background-color: #999df5;
+}
+
+.main-menu > .active > a{    /* .main-menu .active a   Дизайн кнопки активной страницы */
+    color:white;             /* .main-menu> .active> a   Активным является только верхнее меню */
     background-color:#0088cc;
+}
+
+.main-menu ul { /* Работа с подменю дополнительном меню */
+    padding:0; /* Убраны отступы в дополнительном меню */
+    list-style:none; /* Убраны оформление ссылок в дополнительном меню */
+    margin: 0;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:30px;
+    padding-right:0px;
 }
 
 .test_h1{
