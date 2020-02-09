@@ -16,19 +16,31 @@ body {
 /*********VVVVVV*********ГОРИЗОНТАЛЬНОЕ МЕНЮ**************VVVVVVV**********************/
 .horizontal-menu{ /*Основное (горизонтальное) меню сайта*/
     margin-left: 190px;
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
     list-style: none;
     background-color: #f5f5f5;
     border: 1px solid #e5e5e5;
 }
 .horizontal-menu li {
+    padding-top: 10px;    /*границы горизонтального меню сверху от текста*/
+    padding-bottom: 10px; /*границы горизонтального меню снизу от текста*/
     display:inline;
     margin-right:5px;
 }
 
 .horizontal-menu> li{
+    position: relative;
     border: 1px solid #2e2fe5;
     /*margin-bottom: 8px;*/
+}
+.horizontal-menu .horizontal-sub-menu{
+    position: absolute;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    background-color: #fcf8e3;
 }
 
 .horizontal-menu a{
@@ -38,6 +50,10 @@ body {
     color: cornflowerblue;
     text-decoration: none; /* Убрано подчеркивание у ссылок*/
     /* border:1px solid #2e2fe5;*/
+}
+
+.horizontal-menu a:hover{ /* оформление ссылок меню при наведении*/
+    background-color: #acd7f5;
 }
 
 
